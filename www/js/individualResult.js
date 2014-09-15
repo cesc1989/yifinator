@@ -9,4 +9,16 @@ var individual = angular.module('individual',['ionic']);
   		$scope.movies = data;
   	});
 
+  	$scope.alerta = function(){
+  		console.log("dusde");
+  	};
+
   });
+
+  // individual.controller('experimentoCtrl', function($scope){
+
+  // 	$scope.alerta = function(){
+  // 		console.log("dusde");
+  // 	};
+
+  // });
