@@ -1,24 +1,16 @@
 
 
-var individual = angular.module('individual',['ionic']);
+var individual = angular.module('individual',['ionic', 'searchResults']);
 
-  individual.controller('IndividualCtrl', function($scope,$http){
+individual.controller('IndividualCtrl', function($scope,$http){
 
-  	$http.get('https://yts.re/api/movie.json?id=353').success(function(data){
+  $scope.recibirId = function(id){
+    console.log(id);
 
-  		$scope.movies = data;
-  	});
+    $http.get("https://yts.re/api/movie.json?id="+id+"").success(function(data){
 
-  	$scope.alerta = function(){
-  		console.log("dusde");
-  	};
+      $scope.movies = data;
+    });
+  };
 
-  });
-
-  // individual.controller('experimentoCtrl', function($scope){
-
-  // 	$scope.alerta = function(){
-  // 		console.log("dusde");
-  // 	};
-
-  // });
+});

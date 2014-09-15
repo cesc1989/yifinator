@@ -22,9 +22,9 @@
   <ion-content>
     <!-- our list and list items -->
     <ion-list>
-    <p ng-controller="IndividualCtrl"><button ng-click="alerta();">Clicar</button></p>
       <ion-item ng-repeat="result in resultMovies">
         <p><a href="">{{result.MovieTitle}}</a></p>
+        <p ng-controller="IndividualCtrl"><button ng-click="recibirId(result.MovieID);">Clicar</button></p>
       </ion-item>
     </ion-list>
   </ion-content>
