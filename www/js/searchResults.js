@@ -6,4 +6,5 @@ searches.controller('searchResultsCtrl', function($scope, $http) {
 		$scope.resultMovies = data.MovieList;
 		console.log($scope.resultMovies);
 	});
+
 });
