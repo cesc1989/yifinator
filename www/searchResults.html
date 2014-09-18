@@ -1,32 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+  <ion-view title="Resultados">
 
-    <!-- your app's js -->
-    <script src="js/searchResults.js"></script>
-    <script src="js/individualResult.js"></script>
+  <ion-nav-buttons>
+      <a class="button" href="#/">Volver</a>
+    </ion-nav-buttons>
 
-</head>
-<body ng-app="searchResults" ng-controller="searchResultsCtrl">
-  <ion-content>
-    <!-- our list and list items -->
-    <ion-list>
-      <ion-item ng-repeat="result in resultMovies">
-        <p><a href="">{{result.MovieTitle}}</a></p>
-        <p ng-controller="IndividualCtrl"><button ng-click="recibirId(result.MovieID);">Clicar</button></p>
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</body>
-</html>
+    <ion-content ng-controller="searchResultsCtrl">
+      <ion-list>
+        <ion-item ng-repeat="result in resultMovies">
+          <p ng-controller="IndividualCtrl"><a href="#/individual" ng-click="recibirId(result.MovieID);">{{result.MovieTitle}}</a></p>
+
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-view>
+

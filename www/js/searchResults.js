@@ -1,4 +1,4 @@
-var searches = angular.module('searchResults', ['ionic','individual']);
+var searches = angular.module('searchs', []);
 
 searches.controller('searchResultsCtrl', function($scope, $http) {
 
