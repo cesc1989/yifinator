@@ -1,17 +1,17 @@
 
-    <ion-view title="Pelicula individual">
+  <ion-view title="Pelicula individual">
 
-      <ion-nav-buttons>
+    <ion-nav-buttons>
      <a href="#/search" class="button">Volver</a>
     </ion-nav-buttons>
 
+    <div ng-controller="IndividualCtrl">
+    <ion-content>
 
-      <ion-content ng-controller="IndividualCtrl">
-        <!-- <div ng-repeat="movie in movies"> -->
-            <p>{{movies.MovieTitle}}</p>
-            <p><img src="{{movies.LargeCover}}"></p>
-            <p>{{movies.LongDescription}}</p>
-         <!-- </div> -->
+          <p>{{movieData.MovieTitle}}</p>
+          <p><img src="{{movieData.LargeCover}}"></p>
+          <p>{{movieData.LongDescription}}</p>
 
-      </ion-content>
-    </ion-view>
+    </ion-content>
+  </div>
+  </ion-view>

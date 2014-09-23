@@ -1,18 +1,29 @@
 
 
-var individual = angular.module('individual',['searchs']);
+var individual = angular.module('individual',[]);
 
-individual.controller('IndividualCtrl', function($scope,$http){
+individual.controller('IndividualCtrl', function($scope,$rootScope,$http){
 
+  $scope.ide = "";
+  
   $scope.recibirId = function(id){
-    console.log(id);
-
-    $http.get("https://yts.re/api/movie.json?id="+id+"").success(function(data){
-
-      $scope.movies = data;
-      console.log($scope.movies.MovieTitle);
-      console.log($scope.movies);
-    });
+     // console.log(typeof id)
+     $scope.ide = id;
+     // console.log($scope.ide);
+     // var url = 'https://yts.re/api/movie.json?id='+$scope.ide+'';
+     // console.log(url);
+     $rootScope.movieId = $scope.ide;
   };
+  
+  // console.log($rootScope.movieId);
+  var url = 'https://yts.re/api/movie.json?id='+$rootScope.movieId+'';
+
+  $http.get(url).success(function(data){
+
+    $scope.movieData = data;
+    // console.log($scope.movieData.MovieTitle);
+    // console.log($scope.movieData);
+
+  });
 
 });
