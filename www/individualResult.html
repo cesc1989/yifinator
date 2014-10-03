@@ -1,23 +1,32 @@
 
-  <ion-view title="Pelicula individual">
+<ion-view title="Pelicula individual">
 
-    <ion-nav-buttons>
-     <a href="#/search" class="button">Volver</a>
-    </ion-nav-buttons>
+  <ion-nav-buttons>
+    <a href="#/search" class="button">Volver</a>
+  </ion-nav-buttons>
 
-    <div ng-controller="IndividualCtrl">
+  <div ng-controller="IndividualCtrl">
     <ion-content>
 
-          <p>{{movieData.MovieTitle}}</p>
-          <p><img src="{{movieData.LargeCover}}"></p>
-          <p>{{movieData.Quality}}</p>
-          <p>{{movieData.Language}}</p>
-          <p>{{movieData.Size}}</p>
-          <p>{{movieData.Genre1}}</p>
-          <p>{{movieData.Genre2}}</p>
-          <p>{{movieData.LongDescription}}</p>
-          <p><a href="{{movieData.TorrentUrl}}" class="button">Descargar</a></p>
+      <div class="movieData">
+        <div>{{movieData.MovieTitle}}</div>
+        <div>{{movieData.Quality}}</div>
+        <div>{{movieData.Language}}</div>
+        <div>{{movieData.Size}}</div>
+        <div>{{movieData.Genre1}}</div>
+        <div>{{movieData.Genre2}}</div>
+      </div>
+      
+      <div class="movieImage">
+        <img src="{{movieData.LargeCover}}">
+      </div>
+
+      <div>{{movieData.LongDescridivtion}}</div>
+      
+      <div>
+        <a href="{{movieData.TorrentUrl}}" class="button button-block">Descargar</a>
+      </div>
 
     </ion-content>
   </div>
-  </ion-view>
+</ion-view>

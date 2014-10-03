@@ -1,1 +1,15 @@
 /* Empty. Add your own CSS if you like */
+.movieData{
+	float: left;
+	width: 60%;
+	padding: 10px 12px;
+}
+
+.movieImage{
+	width: 40%;
+	float: left;
+}
+.movieImage img{
+	width: 80px;
+	height: 80px;
+}
