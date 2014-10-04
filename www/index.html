@@ -25,8 +25,24 @@
   
     </ion-nav-bar>
     
-    <ion-nav-view animation="slide-left-rigth">
-      
+    <ion-nav-view animation="slide-left-right">
+        <ion-view>
+            <ion-header-bar align-title="center" class="bar-positive">
+                <h1 class="title">Yifynator</h1>
+            </ion-header-bar>
+            
+            <ion-content>
+                <div>
+                    <p>Encuentra la película que estás buscando en Yify</p>
+                </div>
+                <div class="list">
+                    <label class="item item-input">
+                        <input type="text" placeholder="Busca tu película" />
+                    </label>
+                </div>
+                <a href="#/search" class="button button-royal button-block">Buscar</a>
+             </ion-content>
+        </ion-view>
     </ion-nav-view>
      
   </body>
