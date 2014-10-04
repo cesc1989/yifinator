@@ -1,6 +1,6 @@
 var searches = angular.module('searchs', []);
 
-searches.controller('searchResultsCtrl', function($scope, $rootScope, $http) {
+searches.controller('searchResultsCtrl', function($scope,$ionicLoading, $rootScope, $http) {
 
 	//obtengo la cadena con los terminos de busqueda
 	$scope.recibirTerminos = function(terminos){
