@@ -1,3 +1,12 @@
+/*VALIDACION DE LA CAJA DE BUSQUEDA*/
+input.ng-invalid.ng-dirty{
+	background-color: rgba(200,0,0,0.5);
+}
+
+input.ng-valid.ng-dirty{
+	background-color: rgba(169,219,128,0.6);
+}
+
 /*PARA RESOLUCIONES DE MAXIMO  800PX*/
 @media (max-width: 800px){
 	.movieData{
