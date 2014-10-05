@@ -10,9 +10,7 @@ input.ng-valid.ng-dirty{
 /*PARA RESOLUCIONES DE MAXIMO  800PX*/
 @media (max-width: 800px){
 	.movieData{
-		float: left;
-		width: 60%;
-		padding: 26px 16px 20px 20px;
+		
 	}
 	.movieTitle{
 		font-size: 1.9em;
@@ -40,9 +38,7 @@ input.ng-valid.ng-dirty{
 		background-color: #0041DB;
 	}
 	.movieImage{
-		float: left;
-		width: 40%;
-		padding: 23px 18px 16px 0px;
+		
 	}
 	.movieImage img{
 		width: 306px;
@@ -50,7 +46,7 @@ input.ng-valid.ng-dirty{
 	}
 	.movieDescription{
 		font-size: 1.9em;
-		padding: 19px 18px 10px;
+		
 		line-height: 126%;
 	}
 }
@@ -58,9 +54,7 @@ input.ng-valid.ng-dirty{
 /*PARA RESOLUCIONES DE MAXIMO  720PX*/
 @media (max-width: 720px){
 	.movieData{
-		float: left;
-		width: 60%;
-		padding: 20px 14px 0px 16px;
+		
 	}
 	.movieTitle{
 		font-size: 1.8em;
@@ -87,9 +81,7 @@ input.ng-valid.ng-dirty{
 		background-color: #0041DB;
 	}
 	.movieImage{
-		float: left;
-		width: 40%;
-		padding: 20px 10px 16px 0px;
+		
 	}
 	.movieImage img{
 		width: 268px;
@@ -97,7 +89,7 @@ input.ng-valid.ng-dirty{
 	}
 	.movieDescription{
 		font-size: 1.8em;
-		padding: 8px 18px 10px;
+		
 		line-height: 126%;
 	}
 }
@@ -105,9 +97,7 @@ input.ng-valid.ng-dirty{
 /*PARA RESOLUCIONES DE MAXIMO 480PX*/
 @media (max-width: 480px){
 	.movieData{
-		float: left;
-		width: 60%;
-		padding: 16px 14px;
+		
 	}
 	.movieTitle{
 		font-size: 1.6em;
@@ -133,9 +123,7 @@ input.ng-valid.ng-dirty{
 		background-color: #0041DB;
 	}
 	.movieImage{
-		float: left;
-		width: 40%;
-		padding: 14px 10px 12px 0px;
+		
 	}
 	.movieImage img{
 		width: 180px;
@@ -143,7 +131,7 @@ input.ng-valid.ng-dirty{
 	}
 	.movieDescription{
 		font-size: 1.5em;
-		padding: 4px 6px 8px 10px;
+		
 		line-height: 115%;
 	}
 }
@@ -151,9 +139,7 @@ input.ng-valid.ng-dirty{
 /*PARA RESOLUCIONES DE 320PX MAXIMO*/
 @media (max-width:320px){
 	.movieData{
-		float: left;
-		width: 60%;
-		padding: 10px 12px;
+		
 	}
 	.movieTitle{
 		font-size: 1.2em;
@@ -177,9 +163,7 @@ input.ng-valid.ng-dirty{
 		background-color: #0041DB;
 	}
 	.movieImage{
-		padding:10px 10px 10px 0px;
-		width: 40%;
-		float: left;
+		
 	}
 	.movieImage img{
 		width: 120px;
@@ -187,7 +171,7 @@ input.ng-valid.ng-dirty{
 	}
 	.movieDescription{
 		font-size: 1.2em;
-		padding: 4px 6px 4px 10px;
+		
 	}
 
 }

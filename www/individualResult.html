@@ -7,29 +7,35 @@
 
   <div ng-controller="IndividualCtrl">
     <ion-content>
-
-      <div class="movieData">
+      
+      <div class="row">
         
-        <div class="movieTitle">{{movieData.MovieTitle}}</div>
+        <div class="col movieData">
+          
+          <div class="movieTitle">{{movieData.MovieTitle}}</div>
+          
+          <div class="movieInfo">
+            <div>Calidad: <strong>{{movieData.Quality}}</strong></div>
+            <div>Idioma: <strong>{{movieData.Language}}</strong></div>
+            <div>Tamaño: <strong>{{movieData.Size}}</strong></div>
+            <div>Géneros:</div>
+            <div class="movieGenre movieGenre1">{{movieData.Genre1}}</div>
+            <div class="movieGenre movieGenre2">{{movieData.Genre2}}</div>
+          </div>
         
-        <div class="movieInfo">
-          <div>Calidad: <strong>{{movieData.Quality}}</strong></div>
-          <div>Idioma: <strong>{{movieData.Language}}</strong></div>
-          <div>Tamaño: <strong>{{movieData.Size}}</strong></div>
-          <div>Géneros:</div>
-          <div class="movieGenre movieGenre1">{{movieData.Genre1}}</div>
-          <div class="movieGenre movieGenre2">{{movieData.Genre2}}</div>
+        </div>
+        
+        <div class="col movieImage">
+          <img src="{{movieData.LargeCover}}">
         </div>
       
       </div>
       
-      <div class="movieImage">
-        <img src="{{movieData.LargeCover}}">
+      <div class="row">
+        <div class="col movieDescription">{{movieData.LongDescription}}</div>
       </div>
-
-      <div class="movieDescription">{{movieData.LongDescription}}</div>
       
-      <div class="row responsive-sm">
+      <div class="row">
         <div class="col">
           <a href="{{movieData.TorrentUrl}}" class="button button-block button-balanced">Descargar Torrent</a>
         </div>

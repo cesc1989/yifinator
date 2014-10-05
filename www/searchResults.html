@@ -11,19 +11,19 @@
           
           <div class="row" ng-controller="IndividualCtrl">
             <div class="col responsive-sm">
-              <a href="javascript:void(0);" ng-click="recibirId(result.MovieID);">
+              <a href="#/individual" ng-click="recibirId(result.MovieID);">
                 <div class="box-image">
                   <img ng-src="{{result.CoverImage}}" />
                 </div>
               </a>
             </div>
             <div class="col responsive-sm">
-              <a href="javascript:void(0);" ng-click="recibirId(result.MovieID);">
+              <a href="#/individual" ng-click="recibirId(result.MovieID);">
                 <h3>{{result.MovieTitle}}</h3>
                 <p>Genre: {{result.Genre}}</p>
                 <p>Quality: {{result.Quality}}</p>
                 <p>Size: {{result.Size}}</p>
-                <p>Language: {{Language}}</p>
+                <p>Language: {{result.Language}}</p>
               </a>
             </div>
           </div>
