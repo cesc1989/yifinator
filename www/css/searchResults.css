@@ -1,0 +1,25 @@
+.box {
+  width: 100%;
+}
+
+.box .box-image {
+  width: 10%;
+  float: left;
+}
+
+.box .box-image img {
+  width: 120px;
+  height: 177px;
+}
+
+.box .box-content {
+  width: 90%;
+  float: right;
+  padding-left: 15px;
+}
+
+.box .box-content h3 {
+  color: #737272;
+  font-weight: bold;
+  font-size: 14pt;
+}
