@@ -9,8 +9,8 @@ individual.controller('IndividualCtrl', function($scope,$rootScope,$http){
   };
   
   // console.log($rootScope.movieId);
-  //var url = 'https://yts.re/api/movie.json?id='+$rootScope.movieId+'';
-  var url = 'https://yts.re/api/movie.json?id=5515';
+  var url = 'https://yts.re/api/movie.json?id='+$rootScope.movieId+'';
+  //var url = 'https://yts.re/api/movie.json?id=5515';
 
   $http.get(url).success(function(data){
 
