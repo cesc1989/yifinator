@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget id="com.otroespacioblog.yifinator" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>Yifynator</name>
-  <description>
-        Encuentra películas en Yify Torrents.
-    </description>
-  <author email="frajaquico@aol.com" href="http://otroespacioblog.wordpress.com/">
-      Otro Espacio
-    </author>
-  
-  <preference name="orientation" value="portrait" />
-  <preference name="fullscreen" value="false" />
-  <preference name="exit-on-suspend" value="false" />
-  <preference name="show-splash-screen-spinner" value="false" />
-  <preference name="android-installLocation" value="auto" />
-  <!-- <preference name="webviewbounce" value="false"/>
-  <preference name="UIWebViewBounce" value="false"/>
-  <preference name="DisallowOverscroll" value="true"/> 
-  <preference name="BackupWebStorage" value="none"/>-->
-  <icon src="www/img/ionic.png" />
-  <access origin="*"/>
+<name>Yifynator</name>
+<description>
+Encuentra películas en Yify Torrents.
+</description>
+<author email="frajaquico@aol.com" href="http://otroespacioblog.wordpress.com/">
+Otro Espacio
+</author>
+<preference name="orientation" value="portrait" />
+<preference name="fullscreen" value="false" />
+<preference name="exit-on-suspend" value="false" />
+<preference name="show-splash-screen-spinner" value="false" />
+<preference name="android-installLocation" value="auto" />
+<!-- <preference name="webviewbounce" value="false"/>
+<preference name="UIWebViewBounce" value="false"/>
+<preference name="DisallowOverscroll" value="true"/>
+<preference name="BackupWebStorage" value="none"/>-->
+<icon src="www/img/ionic.png" />
+<access origin="*"/>
 </widget>
