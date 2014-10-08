@@ -28,7 +28,7 @@ app.run(function($ionicPlatform,$ionicLoading,$rootScope) {
 
 //Todas las rutas para la aplicacion
 
-app.config(function($stateProvider,$httpProvider) {
+app.config(function($stateProvider,$httpProvider, $urlRouterProvider) {
   //ruta para la página de resultados de búsqueda
   $stateProvider.state('search', {
     url: '/search',
@@ -44,6 +44,8 @@ app.config(function($stateProvider,$httpProvider) {
     url: '/',
     templateUrl: 'index.html'
   });
+
+  //$urlRouterProvider.otherwise("/");
 
   //interceptor de peticiones http para mostrar la pantalla de carga
   $httpProvider.interceptors.push(function($rootScope) {
