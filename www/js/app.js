@@ -43,11 +43,11 @@ app.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
   });
   //ruta para la página inicial
   $stateProvider.state('home',{
-    url: '/home',
-    templateUrl: 'index.html'
+    url: '/',
+    templateUrl: 'home.html'
   });
 
-  // $urlRouterProvider.otherwise("/home");
+   $urlRouterProvider.otherwise("/");
 
   //interceptor de peticiones http para mostrar la pantalla de carga
   $httpProvider.interceptors.push(function($rootScope) {

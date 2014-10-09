@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="yifi">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -20,40 +20,13 @@
     <script src="js/searchResults.js"></script>
     <script src="js/individualResult.js"></script>
   </head>
-  <body>
+  <body ng-app="yifi">
      
     <ion-nav-bar class="bar-positive">
-  
     </ion-nav-bar>
     
     <ion-nav-view animation="slide-left-right">
-        <ion-view>
-            <ion-header-bar align-title="center" class="bar-positive">
-                <h1 class="title">Yifynator</h1>
-            </ion-header-bar>
-            
-            <ion-content ng-controller="searchResultsCtrl">
-                <div class="row responsive-sm">
-                    <div class="col">
-                        <p>Encuentra la película que estás buscando en Yify</p>
-                    </div>
-                </div>
-                <div class="row responsive-sm">
-                    <div class="col">
-                        <div class="list">
-                            <label class="item item-input">
-                                <input type="text" id="termino" ng-model="search.term" placeholder="Busca tu película" required />
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row responsive-sm">
-                    <div class="col">
-                        <a href="#/search" ng-click="recibirTerminos(search.term);" class="button button-balanced button-block">Buscar</a>
-                    </div>
-                </div>
-             </ion-content>
-        </ion-view>
     </ion-nav-view>
+
   </body>
 </html>
