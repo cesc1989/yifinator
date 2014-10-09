@@ -19,4 +19,5 @@
   <preference name="BackupWebStorage" value="none"/>-->
   <icon src="www/img/ionic.png" />
   <access origin="*"/>
+  <content src="index.html" />
 </widget>

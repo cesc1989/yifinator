@@ -28,22 +28,26 @@ app.run(function($ionicPlatform,$ionicLoading,$rootScope) {
 
 //Todas las rutas para la aplicacion
 
-app.config(function($stateProvider,$httpProvider) {
+app.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
   //ruta para la página de resultados de búsqueda
   $stateProvider.state('search', {
     url: '/search',
-    templateUrl: 'searchResults.html'
+    templateUrl: 'searchResults.html',
+    controller:"searchResultsCtrl"
   });
   //ruta para la página de una película individualmente
   $stateProvider.state('individual',{
     url: '/individual',
-    templateUrl: 'individualResult.html'
+    templateUrl: 'individualResult.html',
+    controller: "IndividualCtrl"
   });
   //ruta para la página inicial
   $stateProvider.state('home',{
-    url: '/',
+    url: '/home',
     templateUrl: 'index.html'
   });
+
+  // $urlRouterProvider.otherwise("/home");
 
   //interceptor de peticiones http para mostrar la pantalla de carga
   $httpProvider.interceptors.push(function($rootScope) {
