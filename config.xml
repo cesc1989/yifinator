@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.yify404608" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>yify</name>
+<widget id="com.otroespacioblog.yifinator" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Yifynator</name>
   <description>
-        An Ionic Framework and Cordova project.
-    </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
-    </author>
+  Encuentra películas en Yify Torrents.
+  </description>
+  <author email="frajaquico@aol.com" href="http://otroespacioblog.wordpress.com/">
+  Otro Espacio
+  </author>
   <content src="index.html"/>
   <access origin="*"/>
-<<<<<<< HEAD
+  <preference name="fullscreen" value="false" />
+  <preference name="exit-on-suspend" value="false" />
+  <preference name="show-splash-screen-spinner" value="false" />
+  <preference name="android-installLocation" value="auto" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
-  <feature name="StatusBar">
-    <param name="ios-package" value="CDVStatusBar" onload="true"/>
-  </feature>
-=======
-  <content src="index.html" />
->>>>>>> 7ad1829e25f756370d4cd6b60746d4b273a23042
 </widget>
