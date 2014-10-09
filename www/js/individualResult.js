@@ -2,10 +2,15 @@
 
 var individual = angular.module('individual',[]);
 
-individual.controller('IndividualCtrl', function($scope,$rootScope,$http){
+individual.controller('IndividualCtrl', function($scope,$location,$rootScope,$http){
   
   $scope.recibirId = function(id){
      $rootScope.movieId = id;
+  };
+
+  $scope.goBack = function(){
+    // $ionicNavBarDelegate.back();
+    $location.path("/search");
   };
   
   // console.log($rootScope.movieId);

@@ -1,11 +1,11 @@
 
   <ion-view title="Resultados">
 
-  <ion-nav-buttons ng-controller="searchResultsCtrl">
-      <button class="button ion-chevron-left" ng-click="volverAtras()"> Volver</button>
+  <ion-nav-buttons>
+      <button class="button ion-chevron-left" ng-click="goBack()"> Atras</button>
     </ion-nav-buttons>
 
-    <ion-content ng-controller="searchResultsCtrl">
+    <ion-content>
       <ion-list>
         <ion-item ng-repeat="result in resultMovies">
           
