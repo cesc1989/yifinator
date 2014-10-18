@@ -2,8 +2,8 @@
 
 var individual = angular.module('individual',[]);
 
-individual.controller('IndividualCtrl', function($scope,$location,$rootScope,$http){
-  
+individual.controller('IndividualCtrl', function($scope,$location,$window,$rootScope,$http){
+
   $scope.recibirId = function(id){
      $rootScope.movieId = id;
   };
@@ -13,16 +13,18 @@ individual.controller('IndividualCtrl', function($scope,$location,$rootScope,$ht
     $location.path("/search");
   };
   
-  // console.log($rootScope.movieId);
+  var movie = "";
+
+  $scope.openUrl = function(){
+    var ref = $window.open(movie,'_system','location=no');
+  };
+  
   var url = 'https://yts.re/api/movie.json?id='+$rootScope.movieId+'';
   //var url = 'https://yts.re/api/movie.json?id=5515';
 
   $http.get(url).success(function(data){
-
     $scope.movieData = data;
-    // console.log($scope.movieData.MovieTitle);
-    // console.log($scope.movieData);
-
+    movie = $scope.movieData.TorrentUrl;
   });
 
 });
