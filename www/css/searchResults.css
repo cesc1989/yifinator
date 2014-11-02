@@ -1,3 +1,45 @@
+.bg {
+  background-color: #ccc !important;
+}
+
+.col a {
+  text-decoration: none;
+}
+.description h3 {
+  color: #737272;
+  font-weight: bold;
+  font-size: 14px;
+}
+.description .genero {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #009688;
+  color: #ffffff;
+  padding: .2em;
+  margin: 0;
+}
+.card-content {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+}
+.card-content:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  border-width: 0 20px 20px 0;
+  border-style: solid;
+  border-color: #9e9e9e #ccc;
+}
+@media (max-width: 320px) {
+  .description {
+
+  }
+}
+
+/*---------------------------------------------------*/
 .box {
   width: 100%;
 }
