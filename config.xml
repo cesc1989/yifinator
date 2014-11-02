@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.otroespacioblog.yifinator" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Yifynator</name>
+<widget id="com.otroespacioblog.yifimovies" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Yify Movies</name>
   <description>
-  Encuentra películas en Yify Torrents.
+  Encuentra las películas que buscas en Yify Torrents.
   </description>
   <author email="frajaquico@aol.com" href="http://otroespacioblog.wordpress.com/">
   Otro Espacio
@@ -17,4 +17,12 @@
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
+  <platform name="android">
+    <icon src="/www/res/icon/android/icon.png" />
+    <icon src="/www/res/icon/android/ldpi.png" density="ldpi" />
+    <icon src="/www/res/icon/android/mdpi.png" density="mdpi" />
+    <icon src="/www/res/icon/android/hdpi.png" density="hdpi" />
+    <icon src="/www/res/icon/android/xhdpi.png" density="xhdpi" />
+  </platform>
+  <icon src="img/icon.png" />
 </widget>
