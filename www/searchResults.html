@@ -7,24 +7,26 @@
 
     <ion-content>
       <ion-list>
-        <ion-item ng-repeat="result in resultMovies">
+        <ion-item ng-repeat="result in resultMovies" class="bg">
           
-          <div class="row" ng-controller="IndividualCtrl">
-            <div class="col responsive-sm">
-              <a href="#/individual" ng-click="recibirId(result.MovieID);">
-                <div class="box-image">
-                  <img ng-src="{{result.CoverImage}}" />
+          <div class="row responsive-sm card-content" ng-controller="IndividualCtrl">
+              <div class="col">
+                <a href="#/individual" ng-click="recibirId(result.MovieID);">
+                  <div class="box-image">
+                    <img ng-src="{{result.CoverImage}}" />
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <section class="description">
+                  <a href="#/individual" ng-click="recibirId(result.MovieID);">
+                    <h3>{{result.MovieTitle}}</h3>
+                    <p class="genero">#{{result.Genre}}</p>
+                    <p>Quality: {{result.Quality}}</p>
+                    <p>Size: {{result.Size}}</p>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col responsive-sm">
-              <a href="#/individual" ng-click="recibirId(result.MovieID);">
-                <h3>{{result.MovieTitle}}</h3>
-                <p>Genre: {{result.Genre}}</p>
-                <p>Quality: {{result.Quality}}</p>
-                <p>Size: {{result.Size}}</p>
-              </a>
-            </div>
+              </div>
           </div>
 
         </ion-item>
