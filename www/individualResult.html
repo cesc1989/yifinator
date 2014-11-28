@@ -7,13 +7,9 @@
 
   <div>
     <ion-content>
-      
       <div class="row">
-        
         <div class="col movieData">
-          
           <div class="movieTitle">{{movieData.MovieTitle}}</div>
-          
           <div class="movieInfo">
             <div>Calidad: <strong>{{movieData.Quality}}</strong></div>
             <div>Idioma: <strong>{{movieData.Language}}</strong></div>
@@ -22,22 +18,17 @@
             <div class="movieGenre movieGenre1">{{movieData.Genre1}}</div>
             <div class="movieGenre movieGenre2">{{movieData.Genre2}}</div>
           </div>
-        
         </div>
-        
         <div class="col movieImage">
           <img src="{{movieData.LargeCover}}">
         </div>
-      
       </div>
-      
       <div class="row">
         <div class="col movieDescription">{{movieData.LongDescription}}</div>
       </div>
-      
       <div class="row">
         <div class="col">
-          <a href="javascript:void(0)" ng-click="openUrl()" class="button button-block button-balanced">Descargar Torrent</a>
+          <a href="javascript:void(0)" ng-click="openUrl()" class="button button-block button-balanced">Descargar archivo torrent</a>
         </div>
       </div>
 

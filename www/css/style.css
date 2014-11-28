@@ -1,23 +1,27 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 @import url(http://fonts.googleapis.com/css?family=Lato);
 body {
-  /*font-family: 'Open Sans Condensed', sans-serif;*/
   font-family: 'Lato', sans-serif;
-}
-/*VALIDACION DE LA CAJA DE BUSQUEDA*/
-input.ng-invalid.ng-dirty{
-	background-color: rgba(200,0,0,0.5);
+  font-size: 100%;
 }
 
-input.ng-valid.ng-dirty{
-	background-color: rgba(169,219,128,0.6);
+.intro-text{
+	font-size: 1em;
+}
+
+.error-msg{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+@media (min-width: 1200px){
+	.movieTitle{
+		font-size: 1.6em;
+	}
 }
 
 /*PARA RESOLUCIONES DE MAXIMO  800PX*/
 @media (max-width: 800px){
-	.movieData{
-		
-	}
 	.movieTitle{
 		font-size: 1.9em;
 		padding-bottom: 14px;
@@ -43,25 +47,18 @@ input.ng-valid.ng-dirty{
 	.movieGenre2{
 		background-color: #0041DB;
 	}
-	.movieImage{
-		
-	}
 	.movieImage img{
 		width: 306px;
 		height: auto;
 	}
 	.movieDescription{
 		font-size: 1.9em;
-		
 		line-height: 126%;
 	}
 }
 
 /*PARA RESOLUCIONES DE MAXIMO  720PX*/
 @media (max-width: 720px){
-	.movieData{
-		
-	}
 	.movieTitle{
 		font-size: 1.8em;
 		padding-bottom: 14px;
@@ -86,25 +83,18 @@ input.ng-valid.ng-dirty{
 	.movieGenre2{
 		background-color: #0041DB;
 	}
-	.movieImage{
-		
-	}
 	.movieImage img{
 		width: 268px;
 		height: auto;
 	}
 	.movieDescription{
 		font-size: 1.8em;
-		
 		line-height: 126%;
 	}
 }
 
 /*PARA RESOLUCIONES DE MAXIMO 480PX*/
 @media (max-width: 480px){
-	.movieData{
-		
-	}
 	.movieTitle{
 		font-size: 1.6em;
 		padding-bottom: 12px;
@@ -119,6 +109,7 @@ input.ng-valid.ng-dirty{
 		padding: 4px 0px 4px 6px;
 		border-radius: 6px;
 		color:#fff;
+		width: 66%;
 	}
 	.movieGenre1{
 		margin-top: 3px;
@@ -128,25 +119,18 @@ input.ng-valid.ng-dirty{
 	.movieGenre2{
 		background-color: #0041DB;
 	}
-	.movieImage{
-		
-	}
 	.movieImage img{
-		width: 180px;
+		width: 163px;
 		height: auto;
 	}
 	.movieDescription{
 		font-size: 1.5em;
-		
 		line-height: 115%;
 	}
 }
 
 /*PARA RESOLUCIONES DE 320PX MAXIMO*/
 @media (max-width:320px){
-	.movieData{
-		
-	}
 	.movieTitle{
 		font-size: 1.2em;
 		padding-bottom: 10px;
@@ -168,16 +152,12 @@ input.ng-valid.ng-dirty{
 	.movieGenre2{
 		background-color: #0041DB;
 	}
-	.movieImage{
-		
-	}
 	.movieImage img{
 		width: 120px;
 		height: auto;
 	}
 	.movieDescription{
 		font-size: 1.2em;
-		
 	}
 
 }

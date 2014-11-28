@@ -33,11 +33,6 @@
   border-style: solid;
   border-color: #9e9e9e #ccc;
 }
-@media (max-width: 320px) {
-  .description {
-
-  }
-}
 
 /*---------------------------------------------------*/
 .box {
@@ -64,4 +59,10 @@
   color: #737272;
   font-weight: bold;
   font-size: 14pt;
+}
+
+@media (max-width: 420px) {
+  .bg .col {
+
+  }
 }

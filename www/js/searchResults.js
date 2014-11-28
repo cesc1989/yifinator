@@ -14,8 +14,15 @@ searches.controller('searchResultsCtrl', function($scope,$location,$ionicLoading
 	};
 
 	$http.get('https://yts.re/api/list.json?keywords='+$rootScope.termino+'').success(function(data) {
-		$scope.resultMovies = data.MovieList;
-		//console.log($scope.resultMovies);
+
+		if(data.error){
+			//console.log(data.status);
+			$scope.errorData = data;
+		}else{
+			$scope.resultMovies = data.MovieList;
+			//console.log($scope.resultMovies);
+		}
+
 	});
 
 });
