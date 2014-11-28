@@ -8,7 +8,7 @@
 <ion-content>
 
     <div ng-controller="searchResultsCtrl">
-        <div class="col responsive-sm">
+        <div class="col responsive-sm" ng-show="errorData.error">
             <h3 class="error-msg">{{errorData.error}} :( </h3>
             <br>
             <button class="button button-block button-energized" ng-click="goBack()">¡Prueba otra vez!</button>
