@@ -1,8 +1,8 @@
 
-var app = angular.module('yifi', ['ionic','individual','searchs']);
+var app = angular.module('yifi', ['ionic','individual','searchs','pascalprecht.translate']);
 
 app.run(function($ionicPlatform,$ionicLoading,$rootScope) {
-  
+
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -16,19 +16,17 @@ app.run(function($ionicPlatform,$ionicLoading,$rootScope) {
 
   //interceptor http para mensaje de carga
   $rootScope.$on('loading:show', function() {
-    $ionicLoading.show({template: 'Cargando resultados'})
-  })
+    $ionicLoading.show({template: 'Loading'})
+  });
 
   $rootScope.$on('loading:hide', function() {
     $ionicLoading.hide()
-  })
+  });
 
 });
 
 
-//Todas las rutas para la aplicacion
-
-app.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
+app.config(function($stateProvider,$urlRouterProvider,$httpProvider,$translateProvider) {
   //ruta para la página de resultados de búsqueda
   $stateProvider.state('search', {
     url: '/search',
@@ -62,5 +60,13 @@ app.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
       }
     }
   });
+
+    /*AGREGAR LLAVE PARA TRADUCCIONES EN INGLES*/
+    $translateProvider.translations('en', english);
+
+    /*AGREGAR LLAVE PARA TRADUCCIONES EN ESPANOL*/
+    $translateProvider.translations('es', spanish);
+
+    $translateProvider.preferredLanguage('en');
 
 });

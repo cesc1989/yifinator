@@ -1,7 +1,7 @@
 
 var searches = angular.module('searchs', []);
 
-searches.controller('searchResultsCtrl', function($scope,$location,$ionicLoading,$rootScope, $http) {
+searches.controller('searchResultsCtrl', function($scope,$location,$ionicLoading,$rootScope,$http,$translate) {
 
 	//obtengo la cadena con los terminos de busqueda
 	$scope.recibirTerminos = function(terminos){
@@ -23,6 +23,22 @@ searches.controller('searchResultsCtrl', function($scope,$location,$ionicLoading
 			//console.log($scope.resultMovies);
 		}
 
+	});
+
+	/*TRADUCCIONES INGLES EN EL HOME*/
+	$translate(['HOME.HEADLINE','HOME.INTROTEXT','HOME.PLACEHOLDER','HOME.BUTTON_TEXT'])
+	  .then(function (translations){
+		$scope.headline = translations['HOME.HEADLINE'];
+		$scope.introtext = translations['HOME.INTROTEXT'];
+		$scope.placeholder = translations['HOME.PLACEHOLDER'];
+		$scope.button_text = translations['HOME.BUTTON_TEXT'];
+	});
+
+	/*TRADUCCIONES INGLES EN RESULTADOS*/
+	$translate(['SEARCH.HEADLINE','SEARCH.BACK'])
+	  .then(function (translations){
+	  	$scope.search_headline = translations['SEARCH.HEADLINE'];
+	  	$scope.back = translations['SEARCH.BACK'];
 	});
 
 });

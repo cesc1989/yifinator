@@ -1,8 +1,8 @@
 
-<ion-view title="Datos de la película">
+<ion-view title="{{headline}}">
 
   <ion-nav-buttons>
-    <button ng-click="goBack()" class="button ion-chevron-left"> Atrás</button>
+    <button ng-click="goBack()" class="button ion-chevron-left"> {{back}}</button>
   </ion-nav-buttons>
 
   <div>
@@ -11,10 +11,10 @@
         <div class="col movieData">
           <div class="movieTitle">{{movieData.MovieTitle}}</div>
           <div class="movieInfo">
-            <div>Calidad: <strong>{{movieData.Quality}}</strong></div>
-            <div>Idioma: <strong>{{movieData.Language}}</strong></div>
-            <div>Tamaño: <strong>{{movieData.Size}}</strong></div>
-            <div>Géneros:</div>
+            <div>{{quality}}: <strong>{{movieData.Quality}}</strong></div>
+            <div>{{language}}: <strong>{{movieData.Language}}</strong></div>
+            <div>{{size}}: <strong>{{movieData.Size}}</strong></div>
+
             <div class="movieGenre movieGenre1">{{movieData.Genre1}}</div>
             <div class="movieGenre movieGenre2">{{movieData.Genre2}}</div>
           </div>
@@ -28,7 +28,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <a href="javascript:void(0)" ng-click="openUrl()" class="button button-block button-balanced">Descargar archivo torrent</a>
+          <a href="javascript:void(0)" ng-click="openUrl()" class="button button-block button-balanced">{{download}}</a>
         </div>
       </div>
 
