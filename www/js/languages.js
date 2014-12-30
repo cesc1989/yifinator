@@ -8,6 +8,7 @@ var english = {
 	SEARCH: {
 		HEADLINE: 'Results',
 		BACK: 'Back',
+		ERROR_MESSAGE: 'Try again!'
 	},
 	INDIVIDUAL: {
 		BACK: 'Back',

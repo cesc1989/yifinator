@@ -35,10 +35,11 @@ searches.controller('searchResultsCtrl', function($scope,$location,$ionicLoading
 	});
 
 	/*TRADUCCIONES INGLES EN RESULTADOS*/
-	$translate(['SEARCH.HEADLINE','SEARCH.BACK'])
+	$translate(['SEARCH.HEADLINE','SEARCH.BACK','SEARCH.ERROR_MESSAGE'])
 	  .then(function (translations){
 	  	$scope.search_headline = translations['SEARCH.HEADLINE'];
 	  	$scope.back = translations['SEARCH.BACK'];
+	  	$scope.error_message = translations['SEARCH.ERROR_MESSAGE'];
 	});
 
 });
