@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.otroespacioblog.yifymovies" version="0.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Yify Movies</name>
+<widget id="com.otroespacioblog.movies" version="0.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Movie Searcher</name>
   <description>
   Encuentra las películas que buscas en Yify Torrents.
   </description>
