@@ -23,6 +23,19 @@
     <script src="js/individualResult.js"></script>
     <script src="js/angular-translate.min.js"></script>
     <script src="js/languages.js"></script>
+
+    <script>
+        document.onclick = function (e) {
+            e = e ||  window.event;
+            var element = e.target || e.srcElement;
+
+            if (element.tagName == 'A' && element.id == "external") {
+                window.open(element.href, "_system", "location=no");
+                return false; // prevent default action and stop event propagation
+            }
+        };
+    </script>
+
   </head>
   <body ng-app="yifi">
 
