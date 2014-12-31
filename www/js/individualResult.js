@@ -1,6 +1,6 @@
 
 
-var individual = angular.module('individual',[]);
+var individual = angular.module('individual',['youtube-embed']);
 
 individual.controller('IndividualCtrl', function($scope,$location,$window,$rootScope,$http,$translate){
 
@@ -25,6 +25,7 @@ individual.controller('IndividualCtrl', function($scope,$location,$window,$rootS
   $http.get(url).success(function(data){
     $scope.movieData = data;
     movie = $scope.movieData.TorrentUrl;
+    $scope.theBestVideo = $scope.movieData.YoutubeTrailerID;
   });
 
 	/*TRADUCCIONES INGLES EN EL INDIVIDUAL*/
