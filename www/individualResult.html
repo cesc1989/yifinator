@@ -1,37 +1,47 @@
 
 <ion-view title="{{headline}}">
 
-  <ion-nav-buttons>
-    <button ng-click="goBack()" class="button ion-chevron-left"> {{back}}</button>
-  </ion-nav-buttons>
+	<ion-nav-buttons>
+		<button ng-click="goBack()" class="button ion-chevron-left"> {{back}}</button>
+	</ion-nav-buttons>
 
-  <div>
-    <ion-content>
-      <div class="row">
-        <div class="col movieData">
-          <div class="movieTitle">{{movieData.MovieTitle}}</div>
-          <div class="movieInfo">
-            <div>{{quality}}: <strong>{{movieData.Quality}}</strong></div>
-            <div>{{language}}: <strong>{{movieData.Language}}</strong></div>
-            <div>{{size}}: <strong>{{movieData.Size}}</strong></div>
+	<ion-content>
 
-            <div class="movieGenre movieGenre1">{{movieData.Genre1}}</div>
-            <div class="movieGenre movieGenre2">{{movieData.Genre2}}</div>
-          </div>
-        </div>
-        <div class="col movieImage">
-          <img src="{{movieData.LargeCover}}">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col movieDescription">{{movieData.LongDescription}}</div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <a href="javascript:void(0)" ng-click="openUrl()" class="button button-block button-balanced">{{download}}</a>
-        </div>
-      </div>
+		<div class="row">
+			<div class="col movieTitle">{{movieData.MovieTitle}}</div>
+		</div>
 
-    </ion-content>
-  </div>
+		<div class="row">
+
+			<div class="col movieInfo">
+				<div>{{quality}}: <strong>{{movieData.Quality}}</strong></div>
+				<div>{{language}}: <strong>{{movieData.Language}}</strong></div>
+				<div>{{size}}: <strong>{{movieData.Size}}</strong></div>
+			</div>
+
+			<div class="col movieImage">
+				<img src="{{movieData.LargeCover}}">
+			</div>
+		</div>
+
+		<div class="row genres">
+			<div class="col">
+				<div class="movieGenre movieGenre1">{{movieData.Genre1}}</div>
+			</div>
+			<div class="col">
+				<div class="movieGenre movieGenre2">{{movieData.Genre2}}</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col movieDescription">{{movieData.LongDescription}}</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<a href="javascript:void(0)" ng-click="openUrl()" class="button button-block button-balanced">{{download}}</a>
+			</div>
+		</div>
+
+	</ion-content>
 </ion-view>
