@@ -34,7 +34,9 @@
 
 		<div class="row genres">
 			<div ng-repeat="genre in movieData.genres" class="movieGenre movie-genre-color">
-				{{genre}}
+				<div class="col">
+					{{genre}}
+				</div>
 			</div>
 		</div>
 
@@ -71,7 +73,7 @@
 		<div class="row">
 			<div class="col">
 				<h3 class="trailer">{{trailer}}</h3>
-				 <youtube-video video-id="theBestVideo"></youtube-video> 
+				<youtube-video video-id="theBestVideo"></youtube-video> 
 			</div>
 		</div>
 
