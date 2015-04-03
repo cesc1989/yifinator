@@ -5,7 +5,7 @@
     <button class="button ion-chevron-left" ng-click="goBack()"> {{back}}</button>
 </ion-nav-buttons>
 
-<ion-content>
+<ion-content class="give-margin-top">
 
     <div ng-controller="searchResultsCtrl">
         <div class="col responsive-sm" ng-show="errorData.error">
@@ -15,32 +15,26 @@
         </div>
     </div>
 
-    <ion-list>
-        <ion-item ng-repeat="result in resultMovies" class="bg">
-            <div class="row responsive-sm card-content" ng-controller="IndividualCtrl">
-
-                <div class="col">
-                    <a href="#/individual" ng-click="recibirId(result.MovieID);">
-                        <div class="box-image">
-                            <img ng-src="{{result.CoverImage}}" />
-                        </div>
-                    </a>
+        <div class="box" ng-repeat="result in resultMovies">
+            <div ng-controller="IndividualCtrl">
+            <a href="#/individual" ng-click="recibirId(result.id);">
+                <div class="box-image">
+                    
+                        <img ng-src="{{result.medium_cover_image}}" />
+                    
                 </div>
 
-                <div class="col">
-                    <section class="description">
-                        <a href="#/individual" ng-click="recibirId(result.MovieID);">
-                            <h3>{{result.MovieTitle}}</h3>
-                            <p class="genero">#{{result.Genre}}</p>
-                            <p>Quality: {{result.Quality}}</p>
-                            <p>Size: {{result.Size}}</p>
-                        </a>
-                    </section>
+                <div class="box-content">
+                    
+                    	<p class="box-title">{{result.title_long}}</p>
+                    
+                    <p class="" ng-repeat="genre in result.genres">{{genre}}</p>
+                    <p>Quality: {{result.runtime}}</p>
+                    <p>Size: {{result.language}}</p>
                 </div>
-
+                </a>
             </div>
 
-        </ion-item>
-    </ion-list>
+        </div>
 </ion-content>
 </ion-view>

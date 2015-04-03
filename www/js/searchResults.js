@@ -13,14 +13,14 @@ searches.controller('searchResultsCtrl', function($scope,$location,$ionicLoading
 		$location.path("/home");
 	};
 
-	$http.get('https://yts.re/api/list.json?keywords='+$rootScope.termino+'').success(function(data) {
+	$http.get('https://yts.to/api/v2/list_movies.json?query_term='+$rootScope.termino+'').success(function(data) {
 
 		if(data.error){
 			//console.log(data.status);
 			$scope.errorData = data;
 		}else{
-			$scope.resultMovies = data.MovieList;
-			//console.log($scope.resultMovies);
+			$scope.resultMovies = data.data.movies;
+			//console.log(data.data.movies);
 		}
 
 	});

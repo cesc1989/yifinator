@@ -18,7 +18,7 @@ var english = {
 		SIZE: 'Size',
 		GENRE: 'Genre',
 		TRAILER: 'Watch trailer',
-		DOWNLOAD: 'Download torrent file'
+		GOTOWEBSITE: 'Visit Web Site'
 	}
 }
 
@@ -41,6 +41,6 @@ var spanish = {
 		SIZE: 'Tamaño',
 		GENRE: 'Género',
 		TRAILER: 'Ver trailer',
-		DOWNLOAD: 'Descargar archivo torrent'
+		GOTOWEBSITE: 'Ir al sitio web'
 	}
 }

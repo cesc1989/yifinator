@@ -8,15 +8,15 @@
 	<ion-content>
 
 		<div class="row">
-			<div class="col movieTitle">{{movieData.MovieTitle}}</div>
+			<div class="col movieTitle">{{movieData.title_long}}</div>
 		</div>
 
 		<div class="row">
 
 			<div class="col movieInfo">
-				<div>{{quality}}: <strong>{{movieData.Quality}}</strong></div>
-				<div>{{language}}: <strong>{{movieData.Language}}</strong></div>
-				<div>{{size}}: <strong>{{movieData.Size}}</strong></div>
+				<div>{{quality}}: <strong>{{movieData.runtime}}</strong></div>
+				<div>{{language}}: <strong>{{movieData.language}}</strong></div>
+				<div>{{size}}: <strong>{{movieData.year}}</strong></div>
 			</div>
 
 			<div class="col movieImage">
@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col movieDescription">{{movieData.LongDescription}}</div>
+			<div class="col movieDescription">{{movieData.description_full}}</div>
 		</div>
 
 		<div class="row">
@@ -47,7 +47,7 @@
 
 		<div class="row">
 			<div class="col">
-				<a ng-click="openUrl()" class="button button-block button-balanced">{{download}}</a>
+				<a ng-click="openUrl()" class="button button-block button-balanced">{{gotowebsite}}</a>
 			</div>
 		</div>
 
