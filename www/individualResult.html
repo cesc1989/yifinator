@@ -5,7 +5,9 @@
 		<button ng-click="goBack()" class="button ion-chevron-left"> {{back}}</button>
 	</ion-nav-buttons>
 
-	<ion-content class="with-white-bg">
+	<ion-content class="with-white-bg" style="background-image: url('{{movieData.images.background_image}}');">
+
+		<div class="background-overlay"></div>
 
 		<div class="row">
 			<div class="col movieTitle">{{movieData.title_long}}</div>
@@ -17,6 +19,7 @@
 				<div>{{runtime}}: <strong>{{movieData.runtime}}</strong></div>
 				<div>{{language}}: <strong>{{movieData.language}}</strong></div>
 				<div>{{year}}: <strong>{{movieData.year}}</strong></div>
+				<div><img class="imdb-logo" src="img/logo-imdb.svg" > <strong><span>{{movieData.rating}}</span></strong></div>
 			</div>
 
 			<div class="col movieImage">
@@ -31,11 +34,36 @@
 		</div>
 
 		<div class="row">
-			<div class="col movieDescription">{{movieData.description_full}}</div>
+			<div class="col movieDescription">
+			<h4>Description</h4>			
+				{{movieData.description_full}}</div>
 		</div>
 
 		<div class="row">
+			<div class="col">
+				<h4>Director:</h4>
+				<div class="cast-box" ng-repeat="director in movieData.directors">
+					<img class="cast-image" ng-src="{{director.medium_image}}" />
+					<strong>
+						<span class="cast-name table-cell">{{director.name}}</span>
+					</strong>
+				</div>
+			</div>
+		</div>
 
+		<div class="row">
+			<div class="col">
+				<h4>Cast:</h4>
+				<div class="cast-box" ng-repeat="actor in movieData.actors">
+					<img class="cast-image" ng-src="{{actor.medium_image}}" />
+					<strong>
+						<span class="cast-name">{{actor.name}}</span>
+					</strong>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
 			<div class="col">
 				<h3 class="trailer">{{trailer}}</h3>
 				 <youtube-video video-id="theBestVideo"></youtube-video> 

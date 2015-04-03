@@ -12,9 +12,10 @@ var english = {
 	},
 	INDIVIDUAL: {
 		BACK: 'Back',
-		HEADLINE: 'Movie',
+		HEADLINE: 'Movie Data',
 		RUNTIME: 'Runtime',
 		LANGUAGE: 'Language',
+		RATING: 'Rating',
 		YEAR: 'Year',
 		GENRE: 'Genre',
 		TRAILER: 'Watch trailer',
@@ -35,9 +36,10 @@ var spanish = {
 	},
 	INDIVIDUAL: {
 		BACK: 'Atrás',
-		HEADLINE: 'Película',
+		HEADLINE: 'Datos de la Película',
 		QUALITY: 'Calidad',
 		LANGUAGE: 'Idioma',
+		RATING: 'Puntuación',
 		YEAR: 'Año',
 		GENRE: 'Género',
 		TRAILER: 'Ver trailer',
