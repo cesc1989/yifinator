@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.otroespacioblog.movies" version="0.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Movie Searcher</name>
+<widget id="com.otroespacioblog.yifynator" version="0.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Movies in Yify</name>
   <description>
-  Encuentra las películas que buscas en Yify Torrents.
+  Encuentra información relevante sobre las películas más destacada en Yify.
   </description>
   <author email="frajaquico@aol.com" href="http://otroespacioblog.wordpress.com/">
   Otro Espacio

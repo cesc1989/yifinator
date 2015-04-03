@@ -17,22 +17,17 @@
 
         <div class="box" ng-repeat="result in resultMovies">
             <div ng-controller="IndividualCtrl">
-            <a href="#/individual" ng-click="recibirId(result.id);">
-                <div class="box-image">
-                    
-                        <img ng-src="{{result.medium_cover_image}}" />
-                    
-                </div>
+	            <a href="#/individual" ng-click="recibirId(result.id);">
+	                <div class="box-image">
+	                    <img ng-src="{{result.medium_cover_image}}" />
+	                </div>
 
-                <div class="box-content">
-                    
-                    	<p class="box-title">{{result.title_long}}</p>
-                    
-                    <p class="" ng-repeat="genre in result.genres">{{genre}}</p>
-                    <p>Quality: {{result.runtime}}</p>
-                    <p>Size: {{result.language}}</p>
-                </div>
-                </a>
+	                <div class="box-content">
+	                	<p class="box-title">{{result.title_long}}</p>
+	                    <p class="runtime">{{result.runtime}} minutes</p>
+	                    <p class="rating">{{result.rating}}</p>
+	                </div>
+	            </a>
             </div>
 
         </div>

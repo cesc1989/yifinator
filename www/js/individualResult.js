@@ -19,8 +19,8 @@ individual.controller('IndividualCtrl', function($scope,$location,$window,$rootS
     var ref = $window.open(movie,'_system','location=no');
   };
 
-  var url = 'https://yts.to/api/v2/movie_details.json?movie_id='+$rootScope.movieId+'';
-  //var url = 'https://yts.re/api/movie.json?id=5515';
+  //var url = 'https://yts.to/api/v2/movie_details.json?movie_id='+$rootScope.movieId+'';
+  var url = 'https://yts.to/api/v2/movie_details.json?movie_id=3047&with_images=true';
 
   $http.get(url).success(function(data){
     $scope.movieData = data.data;
@@ -29,13 +29,13 @@ individual.controller('IndividualCtrl', function($scope,$location,$window,$rootS
   });
 
 	/*TRADUCCIONES INGLES EN EL INDIVIDUAL*/
-	$translate(['INDIVIDUAL.BACK','INDIVIDUAL.HEADLINE','INDIVIDUAL.QUALITY','INDIVIDUAL.LANGUAGE','INDIVIDUAL.SIZE','INDIVIDUAL.GENRE','INDIVIDUAL.TRAILER','INDIVIDUAL.GOTOWEBSITE'])
+	$translate(['INDIVIDUAL.BACK','INDIVIDUAL.HEADLINE','INDIVIDUAL.RUNTIME','INDIVIDUAL.LANGUAGE','INDIVIDUAL.YEAR','INDIVIDUAL.GENRE','INDIVIDUAL.TRAILER','INDIVIDUAL.GOTOWEBSITE'])
 	  .then(function (translations){
 	  	$scope.back = translations['INDIVIDUAL.BACK'];
 		$scope.headline = translations['INDIVIDUAL.HEADLINE'];
-		$scope.quality = translations['INDIVIDUAL.QUALITY'];
+		$scope.runtime = translations['INDIVIDUAL.RUNTIME'];
 		$scope.language = translations['INDIVIDUAL.LANGUAGE'];
-		$scope.size = translations['INDIVIDUAL.SIZE'];
+		$scope.year = translations['INDIVIDUAL.YEAR'];
 		$scope.genre = translations['INDIVIDUAL.GENRE'];
 		$scope.trailer = translations['INDIVIDUAL.TRAILER'];
 		$scope.gotowebsite = translations['INDIVIDUAL.GOTOWEBSITE'];

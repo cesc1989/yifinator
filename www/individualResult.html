@@ -5,7 +5,7 @@
 		<button ng-click="goBack()" class="button ion-chevron-left"> {{back}}</button>
 	</ion-nav-buttons>
 
-	<ion-content>
+	<ion-content class="with-white-bg">
 
 		<div class="row">
 			<div class="col movieTitle">{{movieData.title_long}}</div>
@@ -14,22 +14,19 @@
 		<div class="row">
 
 			<div class="col movieInfo">
-				<div>{{quality}}: <strong>{{movieData.runtime}}</strong></div>
+				<div>{{runtime}}: <strong>{{movieData.runtime}}</strong></div>
 				<div>{{language}}: <strong>{{movieData.language}}</strong></div>
-				<div>{{size}}: <strong>{{movieData.year}}</strong></div>
+				<div>{{year}}: <strong>{{movieData.year}}</strong></div>
 			</div>
 
 			<div class="col movieImage">
-				<img src="{{movieData.LargeCover}}">
+				<img src="{{movieData.images.large_cover_image}}" />
 			</div>
 		</div>
 
 		<div class="row genres">
-			<div class="col">
-				<div class="movieGenre movieGenre1">{{movieData.Genre1}}</div>
-			</div>
-			<div class="col">
-				<div class="movieGenre movieGenre2">{{movieData.Genre2}}</div>
+			<div ng-repeat="genre in movieData.genres" class="movieGenre movie-genre-color">
+				{{genre}}
 			</div>
 		</div>
 

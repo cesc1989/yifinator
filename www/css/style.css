@@ -1,12 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 @import url(http://fonts.googleapis.com/css?family=Lato);
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 100%;
+  color: #333;
 }
 
 h2{
-	color: #fff;
+	color: #333;
 }
 
 .intro-text{
@@ -33,6 +34,7 @@ h2{
 
 iframe{
 	width: 100%;
+	height: 210%;
 }
 
 @media (min-width: 1200px){
@@ -54,36 +56,40 @@ iframe{
 /*PARA RESOLUCIONES DE MAXIMO 480PX*/
 @media (min-width:320px) and (max-width: 480px){
 	.movieTitle{
-		font-size: 1.6em;
+		font-size: 1.3em;
 		padding-bottom: 10px;
 		margin-top: 6px;
 		font-weight: 500;
 		line-height: 1.1em;
 	}
+
 	.movieInfo{
-		font-size: 1.2em;
+		font-size: 1.1em;
 		line-height: 160%;
 	}
+
 	.movieGenre{
 		background-color: #ccc;
 		padding: 4px 0px 4px 6px;
 		border-radius: 6px;
 		color:#fff;
-		width: 100%;
+		width: 46%;
+		margin-right: 4px;
+		display: inline-block;
 	}
-	.movieGenre1{
+
+	.movie-genre-color{
 		background-color: #00A537;
 	}
-	.movieGenre2{
-		background-color: #0041DB;
-	}
+
 	.movieImage img{
 		width: 100%;
 		margin-bottom: 15px;
 	}
+
 	.movieDescription{
-		font-size: 1.3em;
-		line-height: 125%;
+		font-size: 1em;
+		line-height: 1.4em;
 		margin-bottom: 15px;
 	}
 }
@@ -91,4 +97,8 @@ iframe{
 /*PARA RESOLUCIONES DE 320PX MAXIMO*/
 @media (max-width:320px){
 
+}
+
+ion-content.with-white-bg{
+	background-color: #fff;
 }
